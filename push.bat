@@ -1,5 +1,5 @@
 @echo off
-echo.
 git add .
-git commit -m "%*"
+set /p tag=Enter incoming commit name:
+git commit -m "%tag%"
 git push
