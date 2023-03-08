@@ -4,7 +4,6 @@ cls
 @echo "Pushing changes to a dedicated branch and asking for a pull request"
 git checkout -b PullRequestAsked-%datetimef%
 git push -u origin PullRequestAsked-%datetimef%
-echo "ta mere la pute"
 git add .
 git commit -m "Pull request asked at %datetimef%"
 git push
