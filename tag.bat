@@ -2,7 +2,6 @@
 @echo Creating new tag and pushing it to main branch
 git tag --sort=-v:refname
 set /p tag=Please enter the incoming tag name:
-@echo Tag name: %tag%
 git tag %tag%
 git pull origin main
 git push origin %tag%

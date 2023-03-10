@@ -1,7 +1,7 @@
 @echo off
 @echo "Pushing changes to main branch"
 git add .
-set /p tag=Enter incoming commit name:
-git commit -m "%tag%"
+set /p msg=Enter incoming commit name:
+git commit -m "%msg%"
 git pull origin main
 git push origin main
